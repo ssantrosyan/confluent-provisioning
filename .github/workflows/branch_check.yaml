@@ -1,0 +1,21 @@
+name: Check PR Branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check_pr_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check PR Branch Name
+      run: |
+        branch_name=$(echo "${{ github.event.pull_request.head.ref }}" | awk -F '/' '{print $NF}')
+        if [[ "$branch_name" != "development" && "$branch_name" != *"hotfix"* && "$branch_name" != "staging" ]]; then
+          echo "Branch name is not allowed. Job failed."
+           exit 1
+        else
+          echo "Branch name is allowed. Proceeding with the job."
+        fi

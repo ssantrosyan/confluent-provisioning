@@ -86,6 +86,7 @@ graph TD
     style J fill:#bfb,stroke:#333,stroke-width:2px
     style I fill:#ffb,stroke:#333,stroke-width:2px
     style Q fill:#ffa,stroke:#333,stroke-width:2px
+    style R fill:#aff,stroke:#333,stroke-width:2px
 ```
 
 ### Jenkins Deployment Process
