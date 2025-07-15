@@ -31,6 +31,6 @@ locals {
     Project     = "${var.project}"
     Terraform   = "true"
     Environment = "${var.env}"
-    SourceRepo  = "https://github.com/ssantrosyan777/confluent-provisioning"
+    SourceRepo  = "https://github.com/ssantrosyan/confluent-provisioning"
   }
 }
