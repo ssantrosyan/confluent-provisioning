@@ -163,3 +163,7 @@ ACL configurations in `resources_confluent_acl.tf` define:
 ## Documentation
 
 Detailed documentation for each Confluent resource and data source can be found in the [docs](./docs) folder. Each file describes the schema, required and optional fields, and usage examples for the resource or data source.
+
+## 📝 License
+
+This project is maintained by [ssantrosyan](https://github.com/ssantrosyan).
